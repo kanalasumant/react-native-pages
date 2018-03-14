@@ -100,7 +100,7 @@ export default class Pages extends PureComponent {
     this.mounted = false;
   }
 
-  componentWillReceiveProps(props) {
+  UNSAFE_componentWillReceiveProps(props) {
     let { progress } = props;
 
     if (progress !== this.props.progress) {
